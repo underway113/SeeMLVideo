@@ -12,6 +12,7 @@
 		465A74FC229B026C00F245D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465A74FA229B026C00F245D7 /* Main.storyboard */; };
 		465A74FE229B026D00F245D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465A74FD229B026D00F245D7 /* Assets.xcassets */; };
 		465A7501229B026D00F245D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465A74FF229B026D00F245D7 /* LaunchScreen.storyboard */; };
+		465A7509229B02CF00F245D7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 465A7508229B02CF00F245D7 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		465A74FD229B026D00F245D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		465A7500229B026D00F245D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		465A7502229B026D00F245D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465A7508229B02CF00F245D7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,17 @@
 				465A74FD229B026D00F245D7 /* Assets.xcassets */,
 				465A74FF229B026D00F245D7 /* LaunchScreen.storyboard */,
 				465A7502229B026D00F245D7 /* Info.plist */,
+				465A750A229B036E00F245D7 /* MLModel */,
+				465A7508229B02CF00F245D7 /* .gitignore */,
 			);
 			path = SeeMLVideo;
+			sourceTree = "<group>";
+		};
+		465A750A229B036E00F245D7 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465A7509229B02CF00F245D7 /* .gitignore in Resources */,
 				465A7501229B026D00F245D7 /* LaunchScreen.storyboard in Resources */,
 				465A74FE229B026D00F245D7 /* Assets.xcassets in Resources */,
 				465A74FC229B026C00F245D7 /* Main.storyboard in Resources */,
