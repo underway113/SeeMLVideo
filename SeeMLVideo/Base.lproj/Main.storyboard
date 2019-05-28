@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeeMLVideo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awd-k8-l4O" userLabel="CameraView">
+                                <rect key="frame" x="0.0" y="144" width="414" height="596"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-rj-fgd" userLabel="ModelPickerView">
+                                <rect key="frame" x="0.0" y="740" width="414" height="156"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="tXt-fe-6lq"/>
+                                </constraints>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-x8-Npn" userLabel="ResultViewContainer">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weT-hH-azr">
+                                        <rect key="frame" x="8" y="8" width="398" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPS-4s-k40">
+                                        <rect key="frame" x="8" y="56" width="398" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TCK-hA-n4G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="awd-k8-l4O" firstAttribute="top" secondItem="fIg-x8-Npn" secondAttribute="bottom" id="0zb-0Y-aQn"/>
+                            <constraint firstItem="fIg-x8-Npn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6XY-PB-tM3"/>
+                            <constraint firstItem="c3h-rj-fgd" firstAttribute="top" secondItem="awd-k8-l4O" secondAttribute="bottom" id="ROH-oO-cuN"/>
+                            <constraint firstItem="fIg-x8-Npn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ra4-qF-wb2"/>
+                            <constraint firstItem="c3h-rj-fgd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dcn-8R-DeK"/>
+                            <constraint firstItem="awd-k8-l4O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dt5-w6-oev"/>
+                            <constraint firstItem="c3h-rj-fgd" firstAttribute="top" secondItem="awd-k8-l4O" secondAttribute="bottom" id="gJE-Kc-ZEi"/>
+                            <constraint firstAttribute="bottom" secondItem="c3h-rj-fgd" secondAttribute="bottom" id="gv5-rc-Vcj"/>
+                            <constraint firstItem="awd-k8-l4O" firstAttribute="top" secondItem="fIg-x8-Npn" secondAttribute="bottom" id="ilk-XO-Oi5"/>
+                            <constraint firstItem="awd-k8-l4O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lBf-EN-cf2"/>
+                            <constraint firstItem="fIg-x8-Npn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lop-qX-kwU"/>
+                            <constraint firstItem="c3h-rj-fgd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rfd-LA-kSK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="confLabel1" destination="XPS-4s-k40" id="bb2-B0-yoW"/>
+                        <outlet property="modelPickerView" destination="c3h-rj-fgd" id="fTL-GO-5Dw"/>
+                        <outlet property="resultLabel1" destination="weT-hH-azr" id="ONy-fZ-iBf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>
         </scene>
     </scenes>
 </document>
