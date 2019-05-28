@@ -79,12 +79,20 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             guard let result = req.results as? [VNClassificationObservation] else {return}
             guard let firstRes = result.first else {return}
             
-            DispatchQueue.main.async {
-                self.resultLabel1.text = firstRes.identifier.capitalized.components(separatedBy: ",")[0]
-                
-                self.confLabel1.text = String(format: "%.2f%%",  firstRes.confidence * 100)
-              
+            let finalResult = firstRes.identifier.capitalized.components(separatedBy: ",")[0]
+            let finalConfidence = String(format: "%.2f%%",  firstRes.confidence * 100)
+            
+            
+            //TODO: Set Interval Sample Buffer to print Output more Chill
+            
+            //Print Result if 10% more Confidence
+            if firstRes.confidence * 100 > 10 {
+                DispatchQueue.main.async {
+                    self.printResult(finalResult, finalConfidence)
+                }
             }
+            
+            
             
             print(firstRes.identifier, firstRes.confidence)
             
@@ -112,6 +120,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     //
 
 
+    func printResult(_ res:String, _ conf:String) {
+        resultLabel1.text = res
+        confLabel1.text = conf
+    }
     
     
 }
