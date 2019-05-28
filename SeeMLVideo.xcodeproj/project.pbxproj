@@ -13,6 +13,16 @@
 		465A74FE229B026D00F245D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465A74FD229B026D00F245D7 /* Assets.xcassets */; };
 		465A7501229B026D00F245D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465A74FF229B026D00F245D7 /* LaunchScreen.storyboard */; };
 		465A7509229B02CF00F245D7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 465A7508229B02CF00F245D7 /* .gitignore */; };
+		465A7515229B03FB00F245D7 /* cat_dog_20iter_98.95eval.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A750B229B03FB00F245D7 /* cat_dog_20iter_98.95eval.mlmodel */; };
+		465A7516229B03FB00F245D7 /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A750C229B03FB00F245D7 /* VGG16.mlmodel */; };
+		465A7517229B03FB00F245D7 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A750D229B03FB00F245D7 /* Food101.mlmodel */; };
+		465A7518229B03FB00F245D7 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A750E229B03FB00F245D7 /* GoogLeNetPlaces.mlmodel */; };
+		465A7519229B03FB00F245D7 /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A750F229B03FB00F245D7 /* AgeNet.mlmodel */; };
+		465A751A229B03FB00F245D7 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A7510229B03FB00F245D7 /* GenderNet.mlmodel */; };
+		465A751B229B03FB00F245D7 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A7511229B03FB00F245D7 /* Inceptionv3.mlmodel */; };
+		465A751C229B03FB00F245D7 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A7512229B03FB00F245D7 /* MobileNet.mlmodel */; };
+		465A751D229B03FB00F245D7 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A7513229B03FB00F245D7 /* Resnet50.mlmodel */; };
+		465A751E229B03FB00F245D7 /* Nudity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 465A7514229B03FB00F245D7 /* Nudity.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		465A7500229B026D00F245D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		465A7502229B026D00F245D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465A7508229B02CF00F245D7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		465A750B229B03FB00F245D7 /* cat_dog_20iter_98.95eval.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = cat_dog_20iter_98.95eval.mlmodel; sourceTree = "<group>"; };
+		465A750C229B03FB00F245D7 /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VGG16.mlmodel; sourceTree = "<group>"; };
+		465A750D229B03FB00F245D7 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		465A750E229B03FB00F245D7 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		465A750F229B03FB00F245D7 /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeNet.mlmodel; sourceTree = "<group>"; };
+		465A7510229B03FB00F245D7 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
+		465A7511229B03FB00F245D7 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		465A7512229B03FB00F245D7 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		465A7513229B03FB00F245D7 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		465A7514229B03FB00F245D7 /* Nudity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Nudity.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,16 @@
 		465A750A229B036E00F245D7 /* MLModel */ = {
 			isa = PBXGroup;
 			children = (
+				465A750F229B03FB00F245D7 /* AgeNet.mlmodel */,
+				465A750B229B03FB00F245D7 /* cat_dog_20iter_98.95eval.mlmodel */,
+				465A750D229B03FB00F245D7 /* Food101.mlmodel */,
+				465A7510229B03FB00F245D7 /* GenderNet.mlmodel */,
+				465A750E229B03FB00F245D7 /* GoogLeNetPlaces.mlmodel */,
+				465A7511229B03FB00F245D7 /* Inceptionv3.mlmodel */,
+				465A7512229B03FB00F245D7 /* MobileNet.mlmodel */,
+				465A7514229B03FB00F245D7 /* Nudity.mlmodel */,
+				465A7513229B03FB00F245D7 /* Resnet50.mlmodel */,
+				465A750C229B03FB00F245D7 /* VGG16.mlmodel */,
 			);
 			path = MLModel;
 			sourceTree = "<group>";
@@ -147,8 +177,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465A7516229B03FB00F245D7 /* VGG16.mlmodel in Sources */,
+				465A751D229B03FB00F245D7 /* Resnet50.mlmodel in Sources */,
+				465A751B229B03FB00F245D7 /* Inceptionv3.mlmodel in Sources */,
 				465A74F9229B026C00F245D7 /* ViewController.swift in Sources */,
+				465A7519229B03FB00F245D7 /* AgeNet.mlmodel in Sources */,
 				465A74F7229B026C00F245D7 /* AppDelegate.swift in Sources */,
+				465A7515229B03FB00F245D7 /* cat_dog_20iter_98.95eval.mlmodel in Sources */,
+				465A751E229B03FB00F245D7 /* Nudity.mlmodel in Sources */,
+				465A751C229B03FB00F245D7 /* MobileNet.mlmodel in Sources */,
+				465A751A229B03FB00F245D7 /* GenderNet.mlmodel in Sources */,
+				465A7517229B03FB00F245D7 /* Food101.mlmodel in Sources */,
+				465A7518229B03FB00F245D7 /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
